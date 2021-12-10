@@ -1,0 +1,20 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+    # Chargement des services
+    ICS\BackupBundle\Controller\:
+        resource: "../src/Controller"
+        tags: ['controller.services_arguments']
+    ICS\BackupBundle\Service\:
+        resource: "../src/Service"
+        tags: ['controller.services_arguments']
+    ICS\BackupBundle\Command\:
+        resource: "../src/Command"
+        tags: ['controller.services_arguments']
+    ICS\BackupBundle\Twig\:
+        resource: "../src/Twig"
+        tags: ['controller.services_arguments']
+    ICS\BackupBundle\Form\:
+        resource: "../src/Form"
+        tags: ['controller.services_arguments']
